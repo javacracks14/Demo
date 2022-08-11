@@ -1,0 +1,361 @@
+npadmawa@LIN51006688 MINGW64 /
+$ git config
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+npadmawa@LIN51006688 MINGW64 /
+$ git config --global
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-pattern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pattern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --show-scope          show scope of config (worktree, local, global, system, command)
+    --default <value>     with --get, use default value when missing entry
+
+
+npadmawa@LIN51006688 MINGW64 /
+$ git config --global user.name "Neelima"
+
+npadmawa@LIN51006688 MINGW64 /
+$ git config --global user.email "padmawarneelima@gmail.com"
+
+npadmawa@LIN51006688 MINGW64 /
+$ ^C
+
+npadmawa@LIN51006688 MINGW64 /
+$ mkdir Neelima1Git
+
+npadmawa@LIN51006688 MINGW64 /
+$ cd Neelima1Git
+
+npadmawa@LIN51006688 MINGW64 /Neelima1Git
+$ pwd
+/Neelima1Git
+
+npadmawa@LIN51006688 MINGW64 /Neelima1Git
+$ passwd "git@123"
+passwd: unknown user git@123
+
+npadmawa@LIN51006688 MINGW64 /Neelima1Git
+$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in C:/Users/npadmawa/Downloads/PortableGit/Neelima1Git/.git/
+
+npadmawa@LIN51006688 MINGW64 /Neelima1Git (master)
+$ ls
+
+npadmawa@LIN51006688 MINGW64 /Neelima1Git (master)
+$ ls
+helloworld.html
+
+npadmawa@LIN51006688 MINGW64 /Neelima1Git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        helloworld.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+npadmawa@LIN51006688 MINGW64 /Neelima1Git (master)
+$ git add helloworld.html
+
+npadmawa@LIN51006688 MINGW64 /Neelima1Git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   helloworld.html
+
+
+npadmawa@LIN51006688 MINGW64 /Neelima1Git (master)
+$ ls
+helloworld.html
+
+npadmawa@LIN51006688 MINGW64 /Neelima1Git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   helloworld.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        abc.css
+        readme.txt
+
+
+npadmawa@LIN51006688 MINGW64 /Neelima1Git (master)
+$ git add --all
+
+npadmawa@LIN51006688 MINGW64 /Neelima1Git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   abc.css
+        new file:   helloworld.html
+        new file:   readme.txt
+
+
+npadmawa@LIN51006688 MINGW64 /Neelima1Git (master)
+$ git commit -m "1st release"
+[master (root-commit) 7b2178c] 1st release
+ 3 files changed, 42 insertions(+)
+ create mode 100644 abc.css
+ create mode 100644 helloworld.html
+ create mode 100644 readme.txt
+
+npadmawa@LIN51006688 MINGW64 /Neelima1Git (master)
+$ git status --short M helloworld.html
+
+npadmawa@LIN51006688 MINGW64 /Neelima1Git (master)
+$ ^C
+
+npadmawa@LIN51006688 MINGW64 /Neelima1Git (master)
+$ git status --short M helloworld.html
+ M helloworld.html
+
+npadmawa@LIN51006688 MINGW64 /Neelima1Git (master)
+$ git commit -a -m "minor updates in 1st release"
+[master 2e930c9] minor updates in 1st release
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+npadmawa@LIN51006688 MINGW64 /Neelima1Git (master)
+$ git log
+commit 2e930c9c02f4b660ac1ddb19568ac478dbe84977 (HEAD -> master)
+Author: Neelima <padmawarneelima@gmail.com>
+Date:   Thu Feb 17 16:55:03 2022 +0530
+
+    minor updates in 1st release
+
+commit 7b2178c74186db140f6a2d57f769889dd8bf6d84
+Author: Neelima <padmawarneelima@gmail.com>
+Date:   Thu Feb 17 16:42:44 2022 +0530
+
+    1st release
+
+
+-----------------------
+
+npadmawa@LIN51006688 MINGW64 /
+$ cd neelima1git
+
+npadmawa@LIN51006688 MINGW64 /neelima1git (master)
+$ git branch mybranch1
+
+npadmawa@LIN51006688 MINGW64 /neelima1git (master)
+$ git branch mybranch1 * master
+usage: git branch [<options>] [-r | -a] [--merged] [--no-merged]
+   or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --verbose         show hash and subject, give twice for upstream branch
+    -q, --quiet           suppress informational messages
+    -t, --track[=(direct|inherit)]
+                          set branch tracking configuration
+    -u, --set-upstream-to <upstream>
+                          change the upstream info
+    --unset-upstream      unset the upstream info
+    --color[=<when>]      use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --abbrev[=<n>]        use <n> digits to display object names
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --delete          delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --move            move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    -c, --copy            copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    -l, --list            list branch names
+    --show-current        show current branch name
+    --create-reflog       create the branch's reflog
+    --edit-description    edit the description for the branch
+    -f, --force           force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --column[=<style>]    list branches in columns
+    --sort <key>          field name to sort on
+    --points-at <object>  print only branches of the object
+    -i, --ignore-case     sorting and filtering are case insensitive
+    --format <format>     format to use for the output
+
+
+npadmawa@LIN51006688 MINGW64 /neelima1git (master)
+$ git checkout mybranch1
+Switched to branch 'mybranch1'
+
+npadmawa@LIN51006688 MINGW64 /neelima1git (mybranch1)
+$ git status
+On branch mybranch1
+nothing to commit, working tree clean
+
+npadmawa@LIN51006688 MINGW64 /neelima1git (mybranch1)
+$ git status
+On branch mybranch1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   helloworld.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+npadmawa@LIN51006688 MINGW64 /neelima1git (mybranch1)
+$ git add --all
+
+npadmawa@LIN51006688 MINGW64 /neelima1git (mybranch1)
+$ git status -m "added a line"
+error: unknown switch `m'
+usage: git status [<options>] [--] <pathspec>...
+
+    -v, --verbose         be verbose
+    -s, --short           show status concisely
+    -b, --branch          show branch information
+    --show-stash          show stash information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain[=<version>]
+                          machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+    --ignored[=<mode>]    show ignored files, optional modes: traditional, matching, no. (Default: traditional)
+    --ignore-submodules[=<when>]
+                          ignore changes to submodules, optional when: all, dirty, untracked. (Default: all)
+    --column[=<style>]    list untracked files in columns
+    --no-renames          do not detect renames
+    -M, --find-renames[=<n>]
+                          detect renames, optionally set similarity index
+    --show-ignored-directory
+                          (DEPRECATED: use --ignore=matching instead) Only show directories that match an ignore pattern name.
+    --no-lock-index       (DEPRECATED: use `git --no-optional-locks status` instead) Do not lock the index
+
+
+npadmawa@LIN51006688 MINGW64 /neelima1git (mybranch1)
+$ git commit -m "added one line 3rd release"
+[mybranch1 b06e397] added one line 3rd release
+ 1 file changed, 1 insertion(+)
+
+npadmawa@LIN51006688 MINGW64 /neelima1git (mybranch1)
+$ git chekout master
+git: 'chekout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+npadmawa@LIN51006688 MINGW64 /neelima1git (mybranch1)
+$ git checkout master
+Switched to branch 'master'
+
+npadmawa@LIN51006688 MINGW64 /neelima1git (master)
+$
